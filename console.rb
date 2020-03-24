@@ -21,8 +21,8 @@ house2 = PropertyTracker.new({'address'=> 'Southpark',
 house1.save()
 house2.save()
 
-house1.address = "Glasgow"
-house1.update
+house2.address = "Glasgow"
+# house2.update()
 
 home = PropertyTracker.all()
 house1.delete()
