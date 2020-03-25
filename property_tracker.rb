@@ -56,8 +56,8 @@ class PropertyTracker
       ($1, $2, $3, $4)
       WHERE id = $5"
       values = [@address, @value, @bedrooms, @year_built, @id]
-      dp.prepare("update", sql)
-      dp.exec_prepared("update", values)
+      db.prepare("update", sql)
+      db.exec_prepared("update", values)
       db.close
   end
 

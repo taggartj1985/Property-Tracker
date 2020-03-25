@@ -22,7 +22,7 @@ house1.save()
 house2.save()
 
 house2.address = "Glasgow"
-# house2.update()
+house2.update()
 
 home = PropertyTracker.all()
 house1.delete()
